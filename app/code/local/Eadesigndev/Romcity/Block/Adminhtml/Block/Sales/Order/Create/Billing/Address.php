@@ -66,7 +66,7 @@ class Eadesigndev_Romcity_Block_Adminhtml_Block_Sales_Order_Create_Billing_Addre
         $this->setJsVariablePrefix('billingAddress');
         parent::_prepareForm();
 
-//        $city = $this->_form->getElement('city');
+        $city = $this->_form->getElement('city');
         if ($city) {
             $city->addClass('rom-city');
             $city->setRenderer(Mage::getModel('eadesigndev/adminhtml_render_cityorder'));
