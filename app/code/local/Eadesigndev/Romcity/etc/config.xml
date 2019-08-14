@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Eadesigndev_Romcity>
-            <version>1.0.7</version>
+            <version>1.0.8</version>
         </Eadesigndev_Romcity>
     </modules>
     <global>
@@ -32,10 +32,10 @@
                     <customer_renderer_region>Eadesigndev_Romcity_Model_Adminhtml_Customer_Renderer_Region</customer_renderer_region>
                 </rewrite>
             </adminhtml>
-            <eadesigndev>
+            <romcity>
                 <class>Eadesigndev_Romcity_Model</class>
                 <resourceModel>romcity_mysql4</resourceModel>
-            </eadesigndev>
+            </romcity>
             <romcity_mysql4>
                 <class>Eadesigndev_Romcity_Model_Mysql4</class>
                 <entities>
@@ -82,15 +82,6 @@
             </citydropdown>
         </routers>
     </frontend>
-    <adminhtml>
-        <layout>
-            <updates>
-                <romcitys module="Eadesigndev_Romcity">
-                    <file>romcity/romcity.xml</file>
-                </romcitys>
-            </updates>
-        </layout>
-    </adminhtml>
     <admin>
         <routers>
             <citydropdownadmin>
@@ -102,4 +93,23 @@
             </citydropdownadmin>
         </routers>
     </admin>
+    <adminhtml>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <eadesigndev_romcity>
+                        <class>romcity/eacore_observer</class>
+                        <method>preDispatch</method>
+                    </eadesigndev_romcity>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+        <layout>
+            <updates>
+                <romcitys module="Eadesigndev_Romcity">
+                    <file>romcity/romcity.xml</file>
+                </romcitys>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>

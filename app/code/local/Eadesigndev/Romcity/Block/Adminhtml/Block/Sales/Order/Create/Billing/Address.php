@@ -69,7 +69,7 @@ class Eadesigndev_Romcity_Block_Adminhtml_Block_Sales_Order_Create_Billing_Addre
         $city = $this->_form->getElement('city');
         if ($city) {
             $city->addClass('rom-city');
-            $city->setRenderer(Mage::getModel('eadesigndev/adminhtml_render_cityorder'));
+            $city->setRenderer(Mage::getModel('romcity/adminhtml_render_cityorder'));
         }
 
         $this->_form->addFieldNameSuffix('order[billing_address]');

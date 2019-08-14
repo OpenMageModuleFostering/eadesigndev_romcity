@@ -62,7 +62,7 @@ class Eadesigndev_Romcity_Block_Adminhtml_Block_Sales_Order_Address_Form
         $city = $this->_form->getElement('city');
         if ($city) {
             $city->addClass('rom-city');
-            $city->setRenderer(Mage::getModel('eadesigndev/adminhtml_render_city'));
+            $city->setRenderer(Mage::getModel('romcity/adminhtml_render_city'));
         }
         $this->_form->setId('edit_form');
         $this->_form->setMethod('post');

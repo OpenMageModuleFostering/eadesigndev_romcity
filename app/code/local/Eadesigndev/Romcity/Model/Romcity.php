@@ -10,6 +10,6 @@ class Eadesigndev_Romcity_Model_Romcity extends Mage_Core_Model_Abstract
 
     public function _construct()
     {
-        $this->_init('eadesigndev/romcity');
+        $this->_init('romcity/romcity');
     }
 }

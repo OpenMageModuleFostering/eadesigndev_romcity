@@ -23,4 +23,9 @@ class  Eadesigndev_Romcity_Adminhtml_IndexController extends Mage_Adminhtml_Cont
 
         return;
     }
+
+    protected function _isAllowed()
+    {
+        return true;
+    }
 }

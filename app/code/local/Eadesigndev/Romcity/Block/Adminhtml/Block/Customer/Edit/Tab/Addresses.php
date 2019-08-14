@@ -97,7 +97,7 @@ class Eadesigndev_Romcity_Block_Adminhtml_Block_Customer_Edit_Tab_Addresses exte
         $city = $form->getElement('city');
         if ($city) {
             $city->addClass('rom-city');
-            $city->setRenderer(Mage::getModel('eadesigndev/adminhtml_render_city'));
+            $city->setRenderer(Mage::getModel('romcity/adminhtml_render_city'));
         }
 
         if ($this->isReadonly()) {

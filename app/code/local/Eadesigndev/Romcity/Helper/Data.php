@@ -11,7 +11,7 @@ class Eadesigndev_Romcity_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getCities($countryId, $regionId)
     {
-        $cityCollection = Mage::getModel('eadesigndev/romcity')->getCollection();
+        $cityCollection = Mage::getModel('romcity/romcity')->getCollection();
         $cityCollection->addFieldToSelect('cityname')
             ->addFieldToFilter('country_id', $countryId)
             ->addFieldToFilter('region_id', $regionId);
@@ -23,7 +23,7 @@ class Eadesigndev_Romcity_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getCitiesAsOptions($countryId, $regionId)
     {
-        $cityCollection = Mage::getModel('eadesigndev/romcity')->getCollection();
+        $cityCollection = Mage::getModel('romcity/romcity')->getCollection();
         $cityCollection->addFieldToSelect('cityname')
             ->addFieldToFilter('country_id', $countryId)
             ->addFieldToFilter('region_id', $regionId);

@@ -14,8 +14,8 @@ $installer = $this;
 $installer->startSetup();
 
 $installer->run("
- DROP TABLE IF EXISTS {$this->getTable('eadesigndev/romcity')};
-CREATE TABLE {$this->getTable('eadesigndev/romcity')} (
+ DROP TABLE IF EXISTS {$this->getTable('romcity/romcity')};
+CREATE TABLE {$this->getTable('romcity/romcity')} (
  `city_id` mediumint(8) unsigned NOT NULL auto_increment,
  `country_id` varchar(4) NOT NULL default '0',
  `region_id` varchar(4) NOT NULL default '0',

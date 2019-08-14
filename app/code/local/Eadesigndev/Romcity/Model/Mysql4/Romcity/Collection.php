@@ -17,6 +17,6 @@ class Eadesigndev_Romcity_Model_Mysql4_Romcity_Collection extends Mage_Core_Mode
      */
     public function _construct()
     {
-        $this->_init('eadesigndev/romcity');
+        $this->_init('romcity/romcity');
     }
 }
