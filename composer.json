@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Eadesigndev_Romcity",
+    "type": "magento-module",
+    "license": "Extension-license-name-(OSL-v3.0)",
+    "homepage": "",
+    "description": "The extension will add a city drop-down for the regions that have a related list.",
+    "authors": [
+    {
+        "name": "EaDesign",
+        "email": "office@eadesign.ro"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
